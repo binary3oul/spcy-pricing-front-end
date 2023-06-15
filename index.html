@@ -15,6 +15,7 @@
     <link href="./lib/bootstrap/dist/css/themeColorOverride.min.css" rel="stylesheet" />
 
     <link href="./lib/simpleTab/css.min.css" rel="stylesheet" />
+    <link href="./css/tab.css" rel="stylesheet" />
 
     <script src="./lib/spotlight/spotlight.bundle.js"></script>
 
@@ -197,6 +198,76 @@
 
 
         <!-- Tab links -->
+        <div class="tab tab-container mx-auto">
+            <ul class="tab-thumbnails">
+                <li>
+                  <input type="radio" name="select" id="image1" checked>
+                  <div class="item-hugger">
+                    <div class="title">Overview</div>
+                    <img class="thumb-image" src="https://unsplash.it/289/165?image=882" />
+                    <label for="image1"></label>
+                  </div>
+                  <div class="content">
+                    <div class="item-wrapper"> <img src="https://unsplash.it/1024/612?image=882" />
+                      <div class="title">Overview</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <input type="radio" name="select" id="image2">
+                  <div class="item-hugger">
+                    <div class="title">Events</div>
+                    <img class="thumb-image" src="https://unsplash.it/289/165?image=782" />
+                    <label for="image2"></label>
+                  </div>
+                  <div class="content">
+                    <div class="item-wrapper"> <img src="https://unsplash.it/1024/612?image=782" />
+                      <div class="title">Events</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <input type="radio" name="select" id="image3">
+                  <div class="item-hugger">
+                    <div class="title">Wedding</div>
+                    <img class="thumb-image" src="https://unsplash.it/289/165?image=682" />
+                    <label for="image3"></label>
+                  </div>
+                  <div class="content">
+                    <div class="item-wrapper"> <img src="https://unsplash.it/1024/612?image=682" />
+                      <div class="title">Wedding</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <input type="radio" name="select" id="image4">
+                  <div class="item-hugger">
+                    <div class="title">Landscapes</div>
+                    <img class="thumb-image" src="https://unsplash.it/289/165?image=582" />
+                    <label for="image4"></label>
+                  </div>
+                  <div class="content">
+                    <div class="item-wrapper"> <img src="https://unsplash.it/1024/612?image=582" />
+                      <div class="title">Landscapes</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                    <input type="radio" name="select" id="image5">
+                    <div class="item-hugger">
+                      <div class="title">Backgrounds</div>
+                      <img class="thumb-image" src="https://unsplash.it/289/165?image=582" />
+                      <label for="image5"></label>
+                    </div>
+                    <div class="content">
+                      <div class="item-wrapper"> <img src="https://unsplash.it/1024/612?image=582" />
+                        <div class="title">Backgrounds</div>
+                      </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="white-box"></div>
+        </div>
         <div id="portfolio" class="tab">
             <button class="tablinks" onclick="openTabPage(event, 'tabPage0')" id="defaultTabPage">Overview</button>
             <button class="tablinks" onclick="openTabPage(event, 'tabPage15')">Events</button>
