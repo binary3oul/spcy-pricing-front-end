@@ -17,7 +17,8 @@
     margin-left: -2%;
     margin-bottom: 0;
     text-align: center;
-    padding-inline-start: 0
+    padding-inline-start: 0;
+    background-color: #e8e8e8;
   }
   
   .tab-thumbnails li {
