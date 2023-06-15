@@ -254,7 +254,7 @@
         </div>
 
         <div id="tabPage0" class="tabcontent">
-            <div class="gallery-container" id="animated-thumbnails-gallery">
+            <div class="gallery-container" class="animated-thumbnails-gallery">
                 <a class="gallery-item" data-src="Completed the first round around the sun."
                     href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/123/Mehrish-SunYear-RealisticSun.jpg">
                     <img style="border-radius: 20px;" class="img-responsive"
@@ -890,7 +890,7 @@
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/thumbnail/lg-thumbnail.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/zoom/lg-zoom.umd.js"></script>
     <script>
-        jQuery("#animated-thumbnails-gallery")
+        jQuery(".animated-thumbnails-gallery")
             .justifiedGallery({
                 captions: false,
                 lastRow: "hide",
@@ -899,7 +899,7 @@
             })
             .on("jg.complete", function () {
                 window.lightGallery(
-                document.getElementById("animated-thumbnails-gallery"),
+                document.getElementsByClassName("animated-thumbnails-gallery"),
                 {
                     autoplayFirstVideo: false,
                     pager: false,
