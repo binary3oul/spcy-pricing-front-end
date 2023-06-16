@@ -131,7 +131,7 @@
     background: white;
   }
 
-  .tab-thumbnails input[name="select"]:checked + li {
+  .tab-thumbnails input[name="select"]:checked ~ li {
     flex: 1.2
   }
   
