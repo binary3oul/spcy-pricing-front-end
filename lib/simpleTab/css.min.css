@@ -147,7 +147,7 @@
   }
   
   .tab-thumbnails input[name="select"]:checked + .item-hugger {
-    height: 180px;
+    height: 160px;
     margin: 0;
     background: white;
   }
