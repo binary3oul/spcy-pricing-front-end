@@ -8,7 +8,7 @@
 
     <meta name="copyright" content="Copyright © 2007-2023. SpicyVision Photography. All Rights Reserved." />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <link href="./css/site.min.css" rel="stylesheet" />
     <link href="./lib/bootstrap/dist/css/themeColorOverride.min.css" rel="stylesheet" />
@@ -52,38 +52,38 @@
     <!--Navigation & Intro-->
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top scrolling-navbar">
             <div class="container">
                 <a style="word-break:break-word" class="navbar-brand" href="#">SpicyVision Productions</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav mx-auto smooth-scroll">
                         <li class="nav-item">
-                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link text-white" href="#home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about" data-offset="90">About</a>
+                            <a class="nav-link text-white" href="#about" data-offset="90">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio" data-offset="100">Portfolio</a>
+                            <a class="nav-link text-white" href="#portfolio" data-offset="100">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact" data-offset="100">Contact</a>
+                            <a class="nav-link text-white" href="#contact" data-offset="100">Contact</a>
                         </li>
                     </ul>
                     <!-- Social Icon  -->
                     <ul class="navbar-nav nav-flex-icons">
                         <li class="nav-item">
-                            <a class="nav-link" title="Facebook Page" target="_blank"
+                            <a class="nav-link text-white" title="Facebook Page" target="_blank"
                                 href="https://www.facebook.com/SpicyVision.Photography">
                                 <i class="fab fa-facebook-f light-green-text-2"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" title="Instagram" target="_blank"
+                            <a class="nav-link text-white" title="Instagram" target="_blank"
                                 href="https://www.instagram.com/emran.spicyvision">
                                 <i class="fab fa-instagram light-green-text-2"></i>
                             </a>
@@ -96,37 +96,41 @@
         <!-- Intro Section -->
         <div id="home" class="view jarallax" data-jarallax='{"speed": 0.2}'
             style="background-image: url('https://spicyvisionstorage.blob.core.windows.net/publicshowcase/cover.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-            <div class="mask rgba-black-strong banner">
+            <div class="mask banner" style="background-color: rgba(0, 0, 0, .7);">
                 <div class="container h-100 d-flex justify-content-center align-items-center">
                     <div class="row smooth-scroll">
                         <div class="col-md-12">
-                            <div class="white-text text-center">
+                            <div class="text-white text-center">
                                 <h2 class="display-3 font-weight-bold pb-4 mb-2 wow fadeIn">Emran Hussain</h2>
                                 <h3 class="intro-subtext wow fadeIn" data-wow-delay="0.2s">Professional Photographer and
                                     Videographer</h3>
                             </div>
 
-                            <div class="white-text text-center icons" style="margin-top:60px;">
+                            <div class="text-white text-center icons" style="margin-top:60px;">
                                 <div class="row text-center fadeIn" data-wow-delay="0.4s">
 
                                     <!--First column-->
-                                    <div class="col-md-4 mb-1 mb-md-5">
-                                        <i class="fas fa-female cyan-text fa-3x mb-4"></i>
+                                    <div class="col-md-3 mb-1 mb-md-5">
+                                        <i class="fas fa-female text-cyan fa-3x mb-4"></i>
                                         <h4 class="font-weight-bold mb-4">Portraits</h4>
                                     </div>
                                     <!--/First column-->
                                     <!--Second column-->
-                                    <div class="col-md-4 mb-1 mb-md-5">
-                                        <i class="fas fa-birthday-cake cyan-text fa-3x mb-4"></i>
+                                    <div class="col-md-3 mb-1 mb-md-5">
+                                        <i class="fas fa-birthday-cake text-cyan fa-3x mb-4"></i>
                                         <h4 class="font-weight-bold mb-4">Events</h4>
                                     </div>
                                     <!--/Second column-->
                                     <!--Third column-->
-                                    <div class="col-md-4 mb-1 mb-md-5">
-                                        <i class="fas fa-ring cyan-text fa-3x mb-4"></i>
+                                    <div class="col-md-3 mb-1 mb-md-5">
+                                        <i class="fas fa-ring text-cyan fa-3x mb-4"></i>
                                         <h4 class="font-weight-bold mb-4">Wedding</h4>
                                     </div>
                                     <!--/Third column-->
+                                    <div class="col-md-3 mb-1 mb-md-5">
+                                        <img src="./icons/music_video_icon.svg" class="mb-3 text-cyan" alt="Music Video" style="height:54px;">
+                                        <h4 class="font-weight-bold mb-4">Music Video</h4>
+                                    </div>
 
                                 </div>
                             </div>
@@ -150,7 +154,7 @@
                 <!-- Section title -->
                 <h1 class="text-center mb-5 mt-5 pt-4 fadeIn">
 
-                    With a personalized touch, I am dedicated to bringing your vision to life.
+                    Unveiling beauty as a visual connoisseur...
 
                 </h1>
 
@@ -213,7 +217,7 @@
                   <input type="radio" name="select" value="tabPage0" id="defaultTabPage" checked>
                   <div class="item-hugger">
                     <div class="title">Overview</div>
-                    <img class="thumb-image" src="https://unsplash.it/289/165?image=882" />
+                    <img class="thumb-image" src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/123/Mehrish-SunYear-RealisticSun.jpg" />
                     <label for="defaultTabPage"></label>
                   </div>
                 </li>
@@ -221,7 +225,7 @@
                   <input type="radio" name="select" value="tabPage15" id="image2">
                   <div class="item-hugger">
                     <div class="title">Events</div>
-                    <img class="thumb-image" src="https://unsplash.it/289/165?image=782" />
+                    <img class="thumb-image" src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-15/170/Z7N_4631-Enhanced-NR-Edit.jpg" />
                     <label for="image2">123123123</label>
                   </div>
                 </li>
@@ -229,7 +233,7 @@
                   <input type="radio" name="select" value="tabPage11" id="image3">
                   <div class="item-hugger">
                     <div class="title">Wedding</div>
-                    <img class="thumb-image" src="https://unsplash.it/289/165?image=682" />
+                    <img class="thumb-image" src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/163/Z6N_4694-Edit.jpg" />
                     <label for="image3"></label>
                   </div>
                 </li>
@@ -237,7 +241,7 @@
                   <input type="radio" name="select" value="tabPage9" id="image4">
                   <div class="item-hugger">
                     <div class="title">Landscapes</div>
-                    <img class="thumb-image" src="https://unsplash.it/289/165?image=582" />
+                    <img class="thumb-image" src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-9/93/Z6N_6222.jpg" />
                     <label for="image4"></label>
                   </div>
                 </li>
@@ -245,7 +249,7 @@
                     <input type="radio" name="select" value="tabPage2" id="image5">
                     <div class="item-hugger">
                       <div class="title">Backgrounds</div>
-                      <img class="thumb-image" src="https://unsplash.it/289/165?image=582" />
+                      <img class="thumb-image" src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-2/41/DSC_7351.jpg" />
                       <label for="image5"></label>
                     </div>
                 </li>
@@ -843,10 +847,10 @@
 
         <!--Streak-->
         <div class="container-fluid py-5" style="background: #b1bace;">
-            <div class="flex-center">
+            <div class="d-flex align-items-center justify-content-center">
                 <ul class="list-unstyled">
                     <li>
-                        <h2 class="h2-responsive white-text mt-4 fadeIn" data-wow-delay="0.2s">
+                        <h2 class="text-white mt-4 fadeIn text-center h2-responsive" data-wow-delay="0.2s h2-responsive">
                             <i class="fas fa-quote-left" aria-hidden="true"></i> Observing beauty as an expert
                             visualist...<i class="fas fa-quote-right" aria-hidden="true"></i>
                         </h2>
@@ -865,7 +869,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js" crossorigin="anonymous"
@@ -911,31 +915,15 @@
                 }
                 );
             });
+            $('.navbar-collapse a').click(function () {
+                $(".navbar-collapse").collapse('hide');
+            });
     </script>
 
 
 
 
-    <script src="./lib/simpleTab/script.min.js"></script>
-
-
-    <script>
-        // initialize scrollspy
-        $('body').scrollspy({
-            target: '.dotted-scrollspy'
-        });
-
-        $('#collapseEx a').click(function (e) {
-            $('#collapseEx').collapse('hide');
-        });
-
-        /* WOW.js init */
-        new WOW().init();
-
-        $('.navbar-collapse a').click(function () {
-            $(".navbar-collapse").collapse('hide');
-        });
-    </script>
+    <script src="./js/script.min.js"></script>
 </body>
 
 </html>
