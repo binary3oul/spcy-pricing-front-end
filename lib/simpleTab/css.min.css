@@ -48,8 +48,8 @@
     }
 
     .tab-thumbnails input[name="select"]:not(:checked) + .item-hugger {
-        margin-top: 28px !important;
-        margin-bottom: 12px !important;
+        margin-top: 24px !important;
+        margin-bottom: 16px !important;
         height: 120px !important;
 
     }
