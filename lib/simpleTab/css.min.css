@@ -59,7 +59,6 @@
     }
 
     .tab-thumbnails input[name="select"]:checked + .item-hugger .thumb-image {
-        margin-top: 8px;
         height: 112px !important;
         width: 100%;
     }
