@@ -67,7 +67,7 @@
     }
 
     .tab-thumbnails .item-hugger {
-        height: 120px;
+        height: 120px !important;
     }
 
     .tab-thumbnails input[name="select"]:checked + .item-hugger {
