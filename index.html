@@ -9,14 +9,13 @@
     <meta name="copyright" content="Copyright © 2007-2023. SpicyVision Photography. All Rights Reserved." />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <link href="./css/site.min.css" rel="stylesheet" />
     <link href="./lib/bootstrap/dist/css/themeColorOverride.min.css" rel="stylesheet" />
 
     <link href="./lib/simpleTab/css.min.css" rel="stylesheet" />
     <link href="./css/tab.css" rel="stylesheet" />
 
-    <!-- <script src="./lib/spotlight/spotlight.bundle.js"></script> -->
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery.css" />
 
     <!-- lightgallery plugins -->
@@ -24,27 +23,8 @@
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-thumbnail.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
 
-    <!-- OR -->
-
-    <!-- <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.css" /> -->
-
-    <style>
-        html,
-        body,
-        header,
-        .jarallax {
-            height: 100%;
-        }
-    </style>
-
     <!-- Google tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-236940072-1">
-    </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-236940072-1');
     </script>
 </head>
 
@@ -55,7 +35,7 @@
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top scrolling-navbar">
             <div class="container">
                 <a style="word-break:break-word" class="navbar-brand" href="#">SpicyVision Productions</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                     aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -891,37 +871,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/thumbnail/lg-thumbnail.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/zoom/lg-zoom.umd.js"></script>
-    <script>
-        jQuery("#animated-thumbnails-gallery-overview, #animated-thumbnails-gallery-events, #animated-thumbnails-gallery-wedding, #animated-thumbnails-gallery-landscapes, #animated-thumbnails-gallery-backgrounds")
-            .justifiedGallery({
-                captions: false,
-                rowHeight: 180,
-                margins: 6
-            })
-            .on("jg.complete", function () {
-                window.lightGallery(
-                this,
-                {
-                    autoplayFirstVideo: false,
-                    pager: false,
-                    galleryId: "nature",
-                    plugins: [lgZoom, lgThumbnail],
-                    mobileSettings: {
-                    controls: false,
-                    showCloseIcon: false,
-                    download: false,
-                    rotate: false
-                    }
-                }
-                );
-            });
-            $('.navbar-collapse a').click(function () {
-                $(".navbar-collapse").collapse('hide');
-            });
-    </script>
-
-
-
 
     <script src="./js/script.min.js"></script>
 </body>
