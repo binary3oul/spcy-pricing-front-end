@@ -49,7 +49,9 @@
 
     .tab-thumbnails input[name="select"]:not(:checked) + .item-hugger {
         margin-top: 28px !important;
-        margin-bottom: 12px !important
+        margin-bottom: 12px !important;
+        height: 120px !important;
+
     }
 
     .tab-thumbnails input[name="select"]:not(:checked) + .item-hugger .thumb-image {
@@ -64,10 +66,6 @@
 
     .tab-thumbnails input[name="select"]:checked + .item-hugger .title {
         font-weight: 700;
-    }
-
-    .tab-thumbnails .item-hugger {
-        height: 120px !important;
     }
 
     .tab-thumbnails input[name="select"]:checked + .item-hugger {
