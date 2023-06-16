@@ -56,6 +56,9 @@
         margin-top: 8px;
         height: 112px !important;
         width: 90%;
+    }
+
+    .tab-thumbnails input[name="select"]:checked + .item-hugger:first-of-type .thumb-image {
         margin-left: 6px;
     }
   }
