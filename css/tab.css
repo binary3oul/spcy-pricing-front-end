@@ -54,6 +54,9 @@
     .h2-responsive {
       font-size: 170%;
     }
+    .thumb-image{
+      height: 80px !important;
+    }
   }
 
   @media (min-width: 992px) {
