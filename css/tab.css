@@ -129,7 +129,10 @@
     height: 180px;
     margin: 0;
     background: white;
-    flex: 1.2;
+  }
+
+  .tab-thumbnails input[name="select"]:checked + li {
+    flex: 1.2
   }
   
   .tab-thumbnails input[name="select"]:checked ~ .content { opacity: 1; }
