@@ -37,12 +37,15 @@
       height: 75px !important;
     }
 
+    .tab-thumbnails :first-child{
+      margin-left: 0 !important;
+    }
     .tab-thumbnails :last-child{
       margin-right: 0 !important;
     }
 
     .tab-thumbnails li {
-      margin: .1%;
+      margin: .5%;
     }
   }
 
