@@ -32,7 +32,7 @@
     flex: 1
   }
   
-  @media (max-width: 576px) {
+@media (max-width: 576px) {
     .tab-thumbnails li {
       width: 18%
     }
@@ -69,9 +69,9 @@
     }
 
     .tab-thumbnails input[name="select"]:checked + .item-hugger {
-        height: 160px;
-      }
-  }
+        height: 160px !important;
+    }
+}
   
   @media (min-width: 576px) {
     .tab-thumbnails li{
@@ -149,7 +149,7 @@
   }
   
   .tab-thumbnails input[name="select"]:checked + .item-hugger {
-    height: 160px;
+    height: 180px;
     margin: 0;
     background: white;
   }
