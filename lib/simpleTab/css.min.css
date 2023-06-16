@@ -135,6 +135,7 @@
   .tab-thumbnails .thumb-image {
     height: 100px;
     padding: 20px 0;
+    transition: all 150ms linear;
   }
   
   .tab-thumbnails input[name="select"]:checked + .item-hugger {
