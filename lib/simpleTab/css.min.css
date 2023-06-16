@@ -58,6 +58,11 @@
         width: 90%;
     }
 
+    .tab-thumbnails input[name="select"]:checked + .item-hugger .title {
+        font-size: 13px;
+        font-weight: 700;
+    }
+
     .tab-thumbnails input[name="select"]:checked + .item-hugger:first-of-type .thumb-image {
         margin-left: 6px;
     }
