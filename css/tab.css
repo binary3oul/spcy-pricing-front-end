@@ -33,6 +33,9 @@
     .tab-thumbnails li {
       width: 18%
     }
+    .thumb-image{
+      height: 75px !important;
+    }
   }
 
   @media (min-width: 576px) {
