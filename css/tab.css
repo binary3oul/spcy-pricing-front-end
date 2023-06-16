@@ -36,6 +36,14 @@
     .thumb-image{
       height: 75px !important;
     }
+
+    .tab-thumbnails :last-child{
+      margin-right: 0;
+    }
+
+    .tab-thumbnails li {
+      margin-left: .1%;
+    }
   }
 
   @media (min-width: 576px) {
