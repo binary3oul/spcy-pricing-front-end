@@ -66,7 +66,7 @@
   .tab-thumbnails input[name="select"]:not(:checked) + .item-hugger {
     margin-top: 24px !important;
     margin-bottom: 16px !important;
-    height: 120px !important;
+    height: 140px !important;
   }
 
   .tab-thumbnails input[name="select"]:not(:checked) + .item-hugger .thumb-image {
@@ -142,6 +142,7 @@
   margin: 20px 0;
   background: #f2f2f2;
   transition: all 150ms ease-in-out;
+  display: flex;
 }
 
 .tab-thumbnails label {
@@ -158,12 +159,15 @@
   font-size: 12px;
   color: #555;
   transition: all 150ms linear;
+  flex: 1;
+  line-height: 20px !important;
 }
 
 .tab-thumbnails .thumb-image {
   height: 100px;
   padding: 20px 0;
   transition: all 150ms linear;
+  flex: 1;
 }
 
 .tab-thumbnails input[name="select"]:checked + .item-hugger {
