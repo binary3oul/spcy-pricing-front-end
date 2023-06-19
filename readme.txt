@@ -1,4 +1,4 @@
 Please find setting of lightgallery
-    js/script.min.js:17
+    site.js:23
 margin of Tab thumbnails
-    lib/simpleTab/css.min.css:50-71
+    simpleTab.css:45-82
