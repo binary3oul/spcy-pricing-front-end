@@ -41,6 +41,12 @@
   width: 40%;
   flex: 1
 }
+
+@media (max-width: 375px) {
+  .tab-thumbnails .title {
+    font-size: 10px !important;
+  }
+}
   
 @media (max-width: 576px) {
   .tab-thumbnails li {
