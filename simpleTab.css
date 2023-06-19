@@ -162,6 +162,9 @@
   transition: all 150ms linear;
   flex: 1;
   line-height: 20px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tab-thumbnails .thumb-image {
