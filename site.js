@@ -20,7 +20,7 @@ document.getElementById("defaultTabPage").dispatchEvent(new Event('change'));
 
 // https://codepen.io/sachinchoolur/pen/poebzpV
 /* lightGallery configuration */
-jQuery("#animated-thumbnails-gallery-overview, #animated-thumbnails-gallery-events, #animated-thumbnails-gallery-wedding, #animated-thumbnails-gallery-landscapes, #animated-thumbnails-gallery-backgrounds")
+jQuery(".a")
     .justifiedGallery({
         captions: false,
         rowHeight: 180,     // set Row Height
