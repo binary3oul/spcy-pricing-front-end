@@ -4,7 +4,7 @@ function openTabPage(n, t) {
 
     for (r = document.getElementsByClassName("tablinks"), i = 0; i < r.length; i++)
         r[i].className = r[i].className.replace(" active", "");
-        
+
     document.getElementById(t).style.display = "block";
     n.currentTarget.className += " active"
 }
@@ -16,6 +16,7 @@ selectRadios.forEach(radio => {
         openTabPage(e, e.target.value)
     })
 })
+
 document.getElementById("defaultTabPage").dispatchEvent(new Event('change'));
 
 // https://codepen.io/sachinchoolur/pen/poebzpV
@@ -23,7 +24,7 @@ document.getElementById("defaultTabPage").dispatchEvent(new Event('change'));
 jQuery(".gallery-container")
     .justifiedGallery({
         captions: false,
-        rowHeight: 180,     // set Row Height
+        rowHeight: 360, // This number determines how big the thumbnails will be and how many thumbnails will be shown in a row.
         margins: 6
     })
     .on("jg.complete", function () {
@@ -34,10 +35,12 @@ jQuery(".gallery-container")
                 pager: false,
                 galleryId: "nature",
                 plugins: [lgZoom, lgThumbnail],
+                licenseKey: '08D8C119-0098-4FDC-94A8-58BE235087BC',
+                download: false,
                 mobileSettings: {
                     controls: true,
                     showCloseIcon: true,
-                    download: true,
+                    download: false,
                     rotate: true
                 }
             });

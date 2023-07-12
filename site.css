@@ -25,16 +25,16 @@ html {
         padding-top: 32px
     }
 
-    .banner .container {
-        padding-right: 40px !important;
-        padding-left: 40px !important
-    }
+        .banner .container {
+            padding-right: 40px !important;
+            padding-left: 40px !important
+        }
 
     h1 {
         font-size: 28px !important;
         line-height: 1.5;
     }
-    
+
     h3 {
         font-size: 20px !important;
         line-height: 1.5;
@@ -64,7 +64,7 @@ header,
 }
 
 .dropdown-menu-scrollable {
-    padding-right: 138px;
+    padding-right: 100px;
 }
 
 .view .mask {
