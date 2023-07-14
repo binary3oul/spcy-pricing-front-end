@@ -28,9 +28,19 @@ bottomSelectRadios.forEach(radio => {
 })
 
 
-document.getElementById("defaultTabPage").dispatchEvent(new Event('change'));
 
 window.addEventListener('DOMContentLoaded', function() {
+    const observer = lozad('.img-responsive', {
+        loaded: function(el) {
+            el.classList.add('fade');
+        }
+    });
+    observer.observe();
+
+    const defaultTabs = document.getElementsByClassName("defaultTabPage")
+    for(let i = 0; i < defaultTabs.length; i++) {
+        defaultTabs[i].dispatchEvent(new Event('change'))
+    }
     // Code you want to execute after the DOM has been mounted
     if(window.innerWidth < 768){
         const iconsCount = document.querySelectorAll(".icons .text-cyan").length
@@ -71,8 +81,8 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 $(window).on('load', () => {
-    $('.loading').fadeOut(500)
+    // $('.loading').fadeOut(500)
     
-    $('main').fadeIn(1000)
-    $('header').fadeIn(1000)
+    // $('main').fadeIn(1000)
+    // $('header').fadeIn(1000)
 })
