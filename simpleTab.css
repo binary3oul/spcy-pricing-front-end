@@ -46,7 +46,11 @@ margin-right: 1%; */
 
 @media (max-width: 375px) {
   .tab-thumbnails .title {
-      font-size: 16px !important;
+    /*  font-size: 16px !important; */
+
+  }
+  .title-overview{
+    padding-left: 4px !important;
   }
 }
 
@@ -67,26 +71,26 @@ margin-right: 1%; */
       margin-right: 0 !important;
   }
 
-  .tab-thumbnails input[name="select"]:not(:checked) + .item-hugger {
+  .tab-thumbnails input[type="radio"]:not(:checked) + .item-hugger {
       margin-top: 24px !important;
       margin-bottom: 10px !important; /* Change this to adjust tab */
       height: 120px !important; /* Change this to adjust tab */
   }
 
-      .tab-thumbnails input[name="select"]:not(:checked) + .item-hugger .thumb-image {
-          padding: 16px 0;
-      }
+  .tab-thumbnails input[type="radio"]:not(:checked) + .item-hugger .thumb-image {
+      padding: 16px 0;
+  }
 
-  .tab-thumbnails input[name="select"]:checked + .item-hugger .thumb-image {
+  .tab-thumbnails input[type="radio"]:checked + .item-hugger .thumb-image {
       height: 100px !important;
       width: 90%;
   }
 
-  .tab-thumbnails input[name="select"]:checked + .item-hugger .title {
+  .tab-thumbnails input[type="radio"]:checked + .item-hugger .title {
       font-weight: 700;
   }
 
-  .tab-thumbnails input[name="select"]:checked + .item-hugger {
+  .tab-thumbnails input[type="radio"]:checked + .item-hugger {
       height: 120px !important; /* Change this height to control the tab */
   }
 }
@@ -147,7 +151,7 @@ margin-right: 1%; */
       color: #000;
   }
 
-.tab-thumbnails input[name="select"] {
+.tab-thumbnails input[type="radio"] {
   display: none;
 }
 
@@ -189,16 +193,16 @@ margin-right: 1%; */
   flex: 1;
 }
 
-.tab-thumbnails input[name="select"]:checked + .item-hugger {
+.tab-thumbnails input[type="radio"]:checked + .item-hugger {
   height: 180px;
   margin: 0;
   background: white;
 }
 
-.tab-thumbnails input[name="select"]:checked ~ li {
+.tab-thumbnails input[type="radio"]:checked ~ li {
   flex: 1.2
 }
 
-.tab-thumbnails input[name="select"]:checked ~ .content {
+.tab-thumbnails input[type="radio"]:checked ~ .content {
   opacity: 1;
 }

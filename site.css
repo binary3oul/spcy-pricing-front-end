@@ -10,14 +10,6 @@ main {
     display: none;
 }
 
-.loading-wrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 @media(min-width:768px) {
     html {
         font-size: 16px
@@ -41,10 +33,10 @@ main {
         padding-top: 48px
     }
 
-        .banner .container {
-            padding-right: 40px !important;
-            padding-left: 40px !important
-        }
+    .banner .container {
+        padding-right: 40px !important;
+        padding-left: 40px !important
+    }
 
     h1 {
         font-size: 28px !important;
@@ -111,8 +103,8 @@ header,
 
 .loading{
 	position: absolute;
-	left: 46%;
-	top: 40%;
+	left: calc(50vw - 50px);
+    top: calc(50vh - 50px);
 	transform: translate(-50%, -50%);
 	width: 100px;
 	height: 100px;
@@ -156,4 +148,30 @@ header,
 	border: 12px solid lightgray ;
 	border-top: 12px solid red ;
 	border-bottom: 12px solid red ;				
+}
+
+@media(max-width: 576px) {
+    .loading{
+        left: calc(50vw - 30px);
+        top: calc(50vh - 30px);
+        width: 60px;
+	    height: 60px;
+        border: 2px solid lightgray;
+        border-top:  2px solid tomato;
+        border-bottom:  2px solid tomato;
+    } 
+    .loading::before{
+        width: 150%;
+	    height: 150%;
+        border: 4px solid lightgray ;
+        border-left: 4px solid red ;
+        border-right: 4px solid red ;
+    }
+    .loading::after{
+        width: 200%;
+        height: 200%;
+        border: 8px solid lightgray ;
+        border-top: 8px solid red ;
+        border-bottom: 8px solid red ;	
+    }
 }

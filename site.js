@@ -13,9 +13,20 @@ const selectRadios = document.getElementsByName("select")
 
 selectRadios.forEach(radio => {
     radio.addEventListener("change", (e) => {
+        $(`input[name="bottom-select"][value=${e.target.value}]`).click()
         openTabPage(e, e.target.value)
     })
 })
+
+const bottomSelectRadios = document.getElementsByName("bottom-select")
+
+bottomSelectRadios.forEach(radio => {
+    radio.addEventListener("change", (e) => {
+
+        openTabPage(e, e.target.value)
+    })
+})
+
 
 document.getElementById("defaultTabPage").dispatchEvent(new Event('change'));
 
@@ -55,7 +66,7 @@ window.addEventListener('DOMContentLoaded', function() {
             });
     });
 
-    $('.loading-wrapper').fadeOut(500)
+    $('.loading').fadeOut(500)
     
     $('main').fadeIn(1000)
     $('header').fadeIn(1000)
