@@ -30,23 +30,6 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Select all radios buttons in a group.
-    var radios = document.getElementsByName('radioGroupName');
-
-    // Loop through each radio button and uncheck it.
-    for(var i = 0; i < radios.length; i++){ 
-        radios[i].checked = false;
-    }
-    $('.loading').fadeOut(500)
-    
-    $('main').fadeIn(1000)
-    $('header').fadeIn(1000)
-
-});
-
-
-setTimeout(() => {
-
     jQuery(".gallery-container")
     .justifiedGallery({
         captions: false,
@@ -71,4 +54,16 @@ setTimeout(() => {
                 }
             });
     });
+    
+    $('.loading').fadeOut(500)
+    
+    $('main').fadeIn(1000)
+    $('header').fadeIn(1000)
+
+});
+
+
+setTimeout(() => {
+
+    
 }, 100)
