@@ -51,6 +51,19 @@ setTimeout(() => {
     dataSrcElements.forEach(item => {
         item.setAttribute('src', item.getAttribute('data-src'))
     });
+
+    [
+        "https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/css/lightgallery.css",
+        "https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/css/lg-zoom.css",
+        "https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/css/lg-thumbnail.css",
+        "https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css"
+    ].forEach(link => {
+        console.log('link', link)
+        var cssFile = document.createElement('link');
+        cssFile.rel = "stylesheet";
+        cssFile.href = link
+        document.head.appendChild(cssFile);
+    })
     [
         'https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/lightgallery.umd.js',
         'https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js',
