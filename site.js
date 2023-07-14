@@ -45,7 +45,6 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    console.log(jQuery(".gallery-container").justifiedGallery)
     jQuery(".gallery-container")
     .justifiedGallery({
         captions: false,

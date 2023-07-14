@@ -47,7 +47,7 @@ margin-right: 1%; */
   .new-line {
     display: none;
   }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .tab-thumbnails .title {
     /*  font-size: 16px !important; */
 
