@@ -50,17 +50,8 @@ setTimeout(() => {
 
     var dataSrcElements = document.querySelectorAll('[data-src]')
     dataSrcElements.forEach(item => {
-        console.log('item', item)
         item.setAttribute('src', item.getAttribute('data-src'))
     });
-    // https://codepen.io/sachinchoolur/pen/poebzpV
-    /* lightGallery configuration */
-    // while(true) {
-    //     console.log('loading')
-    //     if(jQuery(".gallery-container").justifiedGallery) {
-    //         break
-    //     }
-    // }
     console.log('jQuery', jQuery(".gallery-container").justifiedGallery)
 
     jQuery(".gallery-container")
@@ -87,4 +78,4 @@ setTimeout(() => {
                 }
             });
     });
-}, 1)
+}, 100)
