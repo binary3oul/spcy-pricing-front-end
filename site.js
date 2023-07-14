@@ -19,33 +19,6 @@ selectRadios.forEach(radio => {
 
 document.getElementById("defaultTabPage").dispatchEvent(new Event('change'));
 
-// https://codepen.io/sachinchoolur/pen/poebzpV
-/* lightGallery configuration */
-jQuery(".gallery-container")
-    .justifiedGallery({
-        captions: false,
-        rowHeight: 360, // This number determines how big the thumbnails will be and how many thumbnails will be shown in a row.
-        margins: 6
-    })
-    .on("jg.complete", function () {
-        window.lightGallery(
-            this,
-            {
-                autoplayFirstVideo: false,
-                pager: false,
-                galleryId: "nature",
-                plugins: [lgZoom, lgThumbnail],
-                licenseKey: '08D8C119-0098-4FDC-94A8-58BE235087BC',
-                download: false,
-                mobileSettings: {
-                    controls: true,
-                    showCloseIcon: true,
-                    download: false,
-                    rotate: true
-                }
-            });
-    });
-
 window.addEventListener('DOMContentLoaded', function() {
     // Code you want to execute after the DOM has been mounted
     if(window.innerWidth < 768){
@@ -89,4 +62,30 @@ setTimeout(() => {
         script.src = link
         document.body.appendChild(script);
     })
+    // https://codepen.io/sachinchoolur/pen/poebzpV
+    /* lightGallery configuration */
+    jQuery(".gallery-container")
+    .justifiedGallery({
+        captions: false,
+        rowHeight: 360, // This number determines how big the thumbnails will be and how many thumbnails will be shown in a row.
+        margins: 6
+    })
+    .on("jg.complete", function () {
+        window.lightGallery(
+            this,
+            {
+                autoplayFirstVideo: false,
+                pager: false,
+                galleryId: "nature",
+                plugins: [lgZoom, lgThumbnail],
+                licenseKey: '08D8C119-0098-4FDC-94A8-58BE235087BC',
+                download: false,
+                mobileSettings: {
+                    controls: true,
+                    showCloseIcon: true,
+                    download: false,
+                    rotate: true
+                }
+            });
+    });
 }, 1)
