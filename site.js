@@ -50,6 +50,7 @@ setTimeout(() => {
 
     var dataSrcElements = document.querySelectorAll('[data-src]')
     dataSrcElements.forEach(item => {
+        console.log('item', item)
         item.setAttribute('src', item.getAttribute('data-src'))
     });
     // https://codepen.io/sachinchoolur/pen/poebzpV
