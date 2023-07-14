@@ -64,4 +64,10 @@ document.addEventListener('DOMContentLoaded', function() {
     for(var i = 0; i < radios.length; i++){ 
         radios[i].checked = false;
     }
+
+    // load data-src from media tags
+    var dataSrcElements = document.querySelectorAll('[data-src]')
+    dataSrcElements.forEach((item) => {
+        item.setAttribute('src', item.getAttribute('data-src'))
+    })
 });
