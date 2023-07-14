@@ -47,11 +47,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 setTimeout(() => {
-    var dataSrcElements = document.querySelectorAll('[temp-src]')
-    dataSrcElements.forEach(item => {
-        item.setAttribute('src', item.getAttribute('temp-src'))
-    });
-
     [
         "https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/css/lightgallery.css",
         "https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/css/lg-zoom.css",
@@ -64,6 +59,13 @@ setTimeout(() => {
         cssFile.href = link
         document.head.appendChild(cssFile);
     })
+    
+    var dataSrcElements = document.querySelectorAll('[temp-src]')
+    dataSrcElements.forEach(item => {
+        item.setAttribute('src', item.getAttribute('temp-src'))
+    });
+
+    
     [
         'https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/lightgallery.umd.js',
         'https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js',
