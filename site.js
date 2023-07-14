@@ -77,13 +77,14 @@ setTimeout(() => {
     var dataSrcElements = document.querySelectorAll('[data-src]')
     dataSrcElements.forEach(item => {
         item.setAttribute('src', item.getAttribute('data-src'))
-    })
+    });
     [
         'https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/lightgallery.umd.js',
         'https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js',
         'https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/plugins/thumbnail/lg-thumbnail.umd.js',
         'https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/plugins/zoom/lg-zoom.umd.js'
     ].forEach(link => {
+        console.log('link', link)
         var script = document.createElement('script');
         script.src = link
         document.body.appendChild(script);
