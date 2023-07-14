@@ -46,7 +46,7 @@ jQuery(".gallery-container")
             });
     });
 
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function() {
     // Code you want to execute after the DOM has been mounted
     if(window.innerWidth < 768){
         const iconsCount = document.querySelectorAll(".icons .text-cyan").length
@@ -72,11 +72,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // })
 });
 
-window.addEventListener('load', function() {
-    // load data-src from media tags
+
+setTimeout(() => {
     var dataSrcElements = document.querySelectorAll('[data-src]')
     dataSrcElements.forEach((item) => {
         console.log('src changes')
         item.setAttribute('src', item.getAttribute('data-src'))
     })
-})
+}, 3000)
