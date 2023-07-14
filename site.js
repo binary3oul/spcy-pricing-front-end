@@ -37,12 +37,15 @@ window.addEventListener('DOMContentLoaded', function() {
     for(var i = 0; i < radios.length; i++){ 
         radios[i].checked = false;
     }
+    document.querySelector('.loading').fadeOut(500)
 
-    // var dataSrcElements = document.querySelectorAll('[temp-src]')
-    // dataSrcElements.forEach((item) => {
-    //     console.log('src changes')
-    //     item.setAttribute('src', item.getAttribute('temp-src'))
-    // })
+    const headerSection = document.querySelector('header')
+    const mainSection = document.querySelector('main')
+    // const 
+    console.log(headerSection, mainSection)
+    headerSection.fadeIn(1000)
+    mainSection.fadeIn(1000)
+
 });
 
 
