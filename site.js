@@ -38,18 +38,18 @@ window.addEventListener('DOMContentLoaded', function() {
         radios[i].checked = false;
     }
 
-    // var dataSrcElements = document.querySelectorAll('[data-src]')
+    // var dataSrcElements = document.querySelectorAll('[temp-src]')
     // dataSrcElements.forEach((item) => {
     //     console.log('src changes')
-    //     item.setAttribute('src', item.getAttribute('data-src'))
+    //     item.setAttribute('src', item.getAttribute('temp-src'))
     // })
 });
 
 
 setTimeout(() => {
-    var dataSrcElements = document.querySelectorAll('[data-src]')
+    var dataSrcElements = document.querySelectorAll('[temp-src]')
     dataSrcElements.forEach(item => {
-        item.setAttribute('src', item.getAttribute('data-src'))
+        item.setAttribute('src', item.getAttribute('temp-src'))
     });
 
     [
