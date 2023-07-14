@@ -54,16 +54,14 @@ window.addEventListener('DOMContentLoaded', function() {
                 }
             });
     });
+
     
-    $('.loading').fadeOut(500)
-    
-    $('main').fadeIn(1000)
-    $('header').fadeIn(1000)
 
 });
 
-
-setTimeout(() => {
-
+$(window).on('load', () => {
+    $('.loading-wrapper').fadeOut(500)
     
-}, 100)
+    $('main').fadeIn(1000)
+    $('header').fadeIn(1000)
+})
