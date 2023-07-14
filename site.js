@@ -47,36 +47,11 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 setTimeout(() => {
-    [
-        "https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/css/lightgallery.css",
-        "https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/css/lg-zoom.css",
-        "https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/css/lg-thumbnail.css",
-        "https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css"
-    ].forEach(link => {
-        console.log('link', link)
-        var cssFile = document.createElement('link');
-        cssFile.rel = "stylesheet";
-        cssFile.href = link
-        document.head.appendChild(cssFile);
-    })
 
     var dataSrcElements = document.querySelectorAll('[temp-src]')
     dataSrcElements.forEach(item => {
         item.setAttribute('src', item.getAttribute('temp-src'))
     });
-
-    
-    [
-        'https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/lightgallery.umd.js',
-        'https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js',
-        'https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/plugins/thumbnail/lg-thumbnail.umd.js',
-        'https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/plugins/zoom/lg-zoom.umd.js'
-    ].forEach(link => {
-        console.log('link', link)
-        var script = document.createElement('script');
-        script.src = link
-        document.body.appendChild(script);
-    })
     // https://codepen.io/sachinchoolur/pen/poebzpV
     /* lightGallery configuration */
     // while(true) {
