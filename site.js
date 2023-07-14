@@ -48,9 +48,9 @@ window.addEventListener('DOMContentLoaded', function() {
 
 setTimeout(() => {
 
-    var dataSrcElements = document.querySelectorAll('[temp-src]')
+    var dataSrcElements = document.querySelectorAll('[data-src]')
     dataSrcElements.forEach(item => {
-        item.setAttribute('src', item.getAttribute('temp-src'))
+        item.setAttribute('src', item.getAttribute('data-src'))
     });
     // https://codepen.io/sachinchoolur/pen/poebzpV
     /* lightGallery configuration */
