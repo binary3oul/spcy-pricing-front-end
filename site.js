@@ -45,3 +45,23 @@ jQuery(".gallery-container")
                 }
             });
     });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Code you want to execute after the DOM has been mounted
+    if(window.innerWidth < 768){
+        const iconsCount = document.querySelectorAll(".icons .text-cyan").length
+        if(iconsCount > 4) {
+            document.querySelector("h2.name").style.setProperty('padding-bottom', '8px', 'important')
+            document.querySelector(".banner").style.paddingTop = "64px"
+            document.querySelector(".icons").style.marginTop = "24px"
+        }
+    }
+
+    // Select all radios buttons in a group.
+    var radios = document.getElementsByName('radioGroupName');
+
+    // Loop through each radio button and uncheck it.
+    for(var i = 0; i < radios.length; i++){ 
+        radios[i].checked = false;
+    }
+});
