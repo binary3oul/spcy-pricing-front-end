@@ -80,6 +80,7 @@ setTimeout(() => {
     // https://codepen.io/sachinchoolur/pen/poebzpV
     /* lightGallery configuration */
     while(true) {
+        console.log('loading')
         if(jQuery(".gallery-container").justifiedGallery) {
             break
         }
