@@ -64,12 +64,19 @@ document.addEventListener('DOMContentLoaded', function() {
     for(var i = 0; i < radios.length; i++){ 
         radios[i].checked = false;
     }
+
+    // var dataSrcElements = document.querySelectorAll('[data-src]')
+    // dataSrcElements.forEach((item) => {
+    //     console.log('src changes')
+    //     item.setAttribute('src', item.getAttribute('data-src'))
+    // })
 });
 
-document.addEventListener('load', function() {
+window.addEventListener('load', function() {
     // load data-src from media tags
     var dataSrcElements = document.querySelectorAll('[data-src]')
     dataSrcElements.forEach((item) => {
+        console.log('src changes')
         item.setAttribute('src', item.getAttribute('data-src'))
     })
 })
