@@ -76,7 +76,6 @@ window.addEventListener('DOMContentLoaded', function() {
 setTimeout(() => {
     var dataSrcElements = document.querySelectorAll('[data-src]')
     dataSrcElements.forEach((item) => {
-        console.log('src changes')
         item.setAttribute('src', item.getAttribute('data-src'))
     })
-}, 10)
+}, 1)
