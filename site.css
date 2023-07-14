@@ -128,7 +128,7 @@ header,
 	to{ transform: rotate(360deg); }
 }
 
-/* .loading::before{
+.loading::before{
 	position: absolute;
 	content: "";
 	width: 200%;
@@ -156,4 +156,4 @@ header,
 	border: 12px solid lightgray ;
 	border-top: 12px solid red ;
 	border-bottom: 12px solid red ;				
-} */
+}
