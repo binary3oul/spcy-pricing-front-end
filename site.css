@@ -2,13 +2,13 @@ html {
     font-size: 14px
 }
 
-/* header{
+header{
     display: none;
 }
 
 main {
     display: none;
-} */
+}
 
 @media(min-width:768px) {
     html {

@@ -34,10 +34,7 @@ window.addEventListener('DOMContentLoaded', function() {
     console.log('observer', observer)
     observer.observe();
 
-    const defaultTabs = document.getElementsByClassName("defaultTabPage")
-    for(let i = 0; i < defaultTabs.length; i++) {
-        defaultTabs[i].dispatchEvent(new Event('change'))
-    }
+    document.getElementById("defaultTabPage").dispatchEvent(new Event('change'))
     // Code you want to execute after the DOM has been mounted
     if(window.innerWidth < 768){
         const iconsCount = document.querySelectorAll(".icons .text-cyan").length
@@ -73,13 +70,9 @@ window.addEventListener('DOMContentLoaded', function() {
             });
     });
 
+    $('.loading').fadeOut(500)
     
+    $('main').fadeIn(1000)
+    $('header').fadeIn(1000)
 
 });
-
-$(window).on('load', () => {
-    // $('.loading').fadeOut(500)
-    
-    // $('main').fadeIn(1000)
-    // $('header').fadeIn(1000)
-})
