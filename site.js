@@ -59,7 +59,7 @@ setTimeout(() => {
         cssFile.href = link
         document.head.appendChild(cssFile);
     })
-    
+
     var dataSrcElements = document.querySelectorAll('[temp-src]')
     dataSrcElements.forEach(item => {
         item.setAttribute('src', item.getAttribute('temp-src'))
@@ -79,6 +79,13 @@ setTimeout(() => {
     })
     // https://codepen.io/sachinchoolur/pen/poebzpV
     /* lightGallery configuration */
+    while(true) {
+        if(jQuery(".gallery-container").justifiedGallery) {
+            break
+        }
+    }
+    console.log('jQuery', jQuery(".gallery-container").justifiedGallery)
+
     jQuery(".gallery-container")
     .justifiedGallery({
         captions: false,
