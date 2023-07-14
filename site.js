@@ -17,7 +17,7 @@ selectRadios.forEach(radio => {
     })
 })
 
-// document.getElementById("defaultTabPage").dispatchEvent(new Event('change'));
+document.getElementById("defaultTabPage").dispatchEvent(new Event('change'));
 
 // https://codepen.io/sachinchoolur/pen/poebzpV
 /* lightGallery configuration */
