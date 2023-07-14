@@ -47,12 +47,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
 setTimeout(() => {
 
-    var dataSrcElements = document.querySelectorAll('[data-src]')
-    dataSrcElements.forEach(item => {
-        item.setAttribute('src', item.getAttribute('data-src'))
-    });
-    console.log('jQuery', jQuery(".gallery-container").justifiedGallery)
-
     jQuery(".gallery-container")
     .justifiedGallery({
         captions: false,
