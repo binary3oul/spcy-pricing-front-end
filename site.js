@@ -37,14 +37,10 @@ window.addEventListener('DOMContentLoaded', function() {
     for(var i = 0; i < radios.length; i++){ 
         radios[i].checked = false;
     }
-    document.querySelector('.loading').fadeOut(500)
-
-    const headerSection = document.querySelector('header')
-    const mainSection = document.querySelector('main')
-    // const 
-    console.log(headerSection, mainSection)
-    headerSection.fadeIn(1000)
-    mainSection.fadeIn(1000)
+    $('.loading').fadeOut(500)
+    
+    $('main').fadeIn(1000)
+    $('header').fadeIn(1000)
 
 });
 
