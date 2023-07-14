@@ -79,4 +79,4 @@ setTimeout(() => {
         console.log('src changes')
         item.setAttribute('src', item.getAttribute('data-src'))
     })
-}, 3000)
+}, 10)
