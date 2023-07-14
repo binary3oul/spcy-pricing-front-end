@@ -30,11 +30,8 @@ bottomSelectRadios.forEach(radio => {
 
 
 window.addEventListener('DOMContentLoaded', function() {
-    const observer = lozad('.img-responsive', {
-        loaded: function(el) {
-            el.classList.add('fade');
-        }
-    });
+    const observer = lozad();
+    console.log('observer', observer)
     observer.observe();
 
     const defaultTabs = document.getElementsByClassName("defaultTabPage")
