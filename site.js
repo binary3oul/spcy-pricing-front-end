@@ -33,9 +33,13 @@ bottomSelectRadios.forEach(radio => {
 })
 
 
-document.getElementById("defaultTabPage").dispatchEvent(new Event('change'));
 
 window.addEventListener('DOMContentLoaded', function() {
+    const observer = lozad();
+    console.log('observer', observer)
+    observer.observe();
+
+    document.getElementById("defaultTabPage").dispatchEvent(new Event('change'))
     // Code you want to execute after the DOM has been mounted
     if(window.innerWidth < 768){
         const iconsCount = document.querySelectorAll(".icons .text-cyan").length
