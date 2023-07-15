@@ -101,7 +101,7 @@ header,
     font-weight: 700;
 }
 
-.loading{
+/* .loading{
 	position: absolute;
 	left: calc(50vw - 50px);
     top: calc(50vh - 50px);
@@ -174,4 +174,4 @@ header,
         border-top: 8px solid red ;
         border-bottom: 8px solid red ;	
     }
-}
+} */
