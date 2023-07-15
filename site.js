@@ -7,7 +7,7 @@ function openTabPage(n, t) {
         r[i].className = r[i].className.replace(" active", "");
     
     $('#gallery-loading').fadeOut('slow', function() {
-        $(`#${t}`).fadeIn('slow', function(){
+        $(`#${t}`).fadeIn(100, function(){
             if(n.currentTarget)
             n.currentTarget.className += " active"
         })
