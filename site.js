@@ -1,12 +1,17 @@
 function openTabPage(n, t) {
+    $('#gallery-loading').show()
     for (var r, u = document.getElementsByClassName("tabcontent"), i = 0; i < u.length; i++)
         u[i].style.display = "none";
 
     for (r = document.getElementsByClassName("tablinks"), i = 0; i < r.length; i++)
         r[i].className = r[i].className.replace(" active", "");
+    
+    $('#gallery-loading').fadeOut(1000)
 
-    document.getElementById(t).style.display = "block";
-    n.currentTarget.className += " active"
+    setTimeout(() => {
+        document.getElementById(t).style.display = "block";
+        n.currentTarget.className += " active"
+    }, 100)
 }
 
 const selectRadios = document.getElementsByName("select")
@@ -14,7 +19,7 @@ const selectRadios = document.getElementsByName("select")
 selectRadios.forEach(radio => {
     radio.addEventListener("change", (e) => {
         $(`input[name="bottom-select"][value=${e.target.value}]`).click()
-        openTabPage(e, e.target.value)
+        // openTabPage(e, e.target.value)
     })
 })
 
@@ -48,6 +53,7 @@ window.addEventListener('DOMContentLoaded', function() {
         margins: 6
     })
     .on("jg.complete", function () {
+        console.log('gallery-start', Date.now())
         window.lightGallery(
             this,
             {
@@ -64,18 +70,12 @@ window.addEventListener('DOMContentLoaded', function() {
                     rotate: true
                 }
             });
+        console.log('gallery-end', Date.now())
+
     });
 
-    $('.loading').fadeOut(500)
     
     $('main').fadeIn(1000)
     $('header').fadeIn(1000)
 
 });
-
-// $(window).on('load', () => {
-//     $('.loading-wrapper').fadeOut(500)
-    
-//     $('main').fadeIn(1000)
-//     $('header').fadeIn(1000)
-// })
