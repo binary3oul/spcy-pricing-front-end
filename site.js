@@ -6,12 +6,13 @@ function openTabPage(n, t) {
     for (r = document.getElementsByClassName("tablinks"), i = 0; i < r.length; i++)
         r[i].className = r[i].className.replace(" active", "");
     
-    $('#gallery-loading').fadeOut(1000)
-
-    setTimeout(() => {
-        document.getElementById(t).style.display = "block";
-        n.currentTarget.className += " active"
-    }, 100)
+    $('#gallery-loading').fadeOut('slow', function() {
+        $(`#${t}`).fadeIn('slow', function(){
+            if(n.currentTarget)
+            n.currentTarget.className += " active"
+        })
+        
+    })
 }
 
 const selectRadios = document.getElementsByName("select")
