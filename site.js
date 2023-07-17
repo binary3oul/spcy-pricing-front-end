@@ -12,6 +12,10 @@ function openTabPage(n, t) {
             $('#bottom-portfolio').show()
             if(n.currentTarget)
             n.currentTarget.className += " active"
+
+            $('html, body').animate({
+                scrollTop: $('#portfolio').offset().top
+            }, 'slow');
         })
         
     })
@@ -22,7 +26,6 @@ const selectRadios = document.getElementsByName("select")
 selectRadios.forEach(radio => {
     radio.addEventListener("change", (e) => {
         $(`input[name="bottom-select"][value=${e.target.value}]`).click()
-        // openTabPage(e, e.target.value)
     })
 })
 
@@ -39,7 +42,7 @@ bottomSelectRadios.forEach(radio => {
 
 window.addEventListener('DOMContentLoaded', function() {
     const observer = lozad();
-    console.log('observer', observer)
+    // console.log('observer', observer)
     observer.observe();
 
     document.getElementById("defaultTabPage").dispatchEvent(new Event('change'))
@@ -60,7 +63,7 @@ window.addEventListener('DOMContentLoaded', function() {
         margins: 6
     })
     .on("jg.complete", function () {
-        console.log('gallery-start', Date.now())
+        // console.log('gallery-start', Date.now())
         window.lightGallery(
             this,
             {
@@ -77,7 +80,7 @@ window.addEventListener('DOMContentLoaded', function() {
                     rotate: true
                 }
             });
-        console.log('gallery-end', Date.now())
+        // console.log('gallery-end', Date.now())
 
     });
 
