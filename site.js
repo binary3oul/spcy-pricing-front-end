@@ -36,9 +36,26 @@ bottomSelectRadios.forEach(radio => {
 
 
 window.addEventListener('DOMContentLoaded', function() {
-    const observer = lozad();
-    console.log('observer', observer)
-    observer.observe();
+    
+
+    $(function() {
+        $('.lozad').lazy({
+            delay: 250,
+            effect: "fadeIn",
+            effectTime: 1000,
+            threshold: 0,
+            visibleOnly: true,
+            onError: function(element) {
+                console.log('error loading ' + element.data('src'));
+            },
+            afterLoad: function(element) {
+                // Called after an element was successfully handled
+            },
+            onFinishedAll: function() {
+                // Called once all elements was handled
+            }
+        });
+    });
 
     document.getElementById("defaultTabPage").dispatchEvent(new Event('change'))
     // Code you want to execute after the DOM has been mounted
@@ -58,7 +75,6 @@ window.addEventListener('DOMContentLoaded', function() {
         margins: 6
     })
     .on("jg.complete", function () {
-        console.log('gallery-start', Date.now())
         window.lightGallery(
             this,
             {
@@ -68,6 +84,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 plugins: [lgZoom, lgThumbnail],
                 licenseKey: '08D8C119-0098-4FDC-94A8-58BE235087BC',
                 download: false,
+                preload: 1,
                 mobileSettings: {
                     controls: true,
                     showCloseIcon: true,
@@ -75,8 +92,6 @@ window.addEventListener('DOMContentLoaded', function() {
                     rotate: true
                 }
             });
-        console.log('gallery-end', Date.now())
-
     });
 
     
