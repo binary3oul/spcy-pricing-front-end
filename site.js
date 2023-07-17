@@ -1,4 +1,5 @@
 function openTabPage(n, t) {
+    $('#bottom-portfolio').hide()
     $('#gallery-loading').show()
     for (var r, u = document.getElementsByClassName("tabcontent"), i = 0; i < u.length; i++)
         u[i].style.display = "none";
@@ -8,6 +9,7 @@ function openTabPage(n, t) {
     
     $('#gallery-loading').fadeOut(800, function() {
         $(`#${t}`).fadeIn(100, function(){
+            $('#bottom-portfolio').show()
             if(n.currentTarget)
             n.currentTarget.className += " active"
         })
@@ -42,14 +44,14 @@ window.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById("defaultTabPage").dispatchEvent(new Event('change'))
     // Code you want to execute after the DOM has been mounted
-    if(window.innerWidth < 768){
-        const iconsCount = document.querySelectorAll(".icons .text-cyan").length
-        if(iconsCount > 4) {
-            document.querySelector("h2.name").style.setProperty('padding-bottom', '8px', 'important')
-            document.querySelector(".banner").style.paddingTop = "64px"
-            document.querySelector(".icons").style.marginTop = "24px"
-        }
-    }
+    // if(window.innerWidth < 768){
+    //     const iconsCount = document.querySelectorAll(".icons .text-cyan").length
+    //     if(iconsCount > 4) {
+    //         document.querySelector("h2.name").style.setProperty('padding-bottom', '8px', 'important')
+    //         document.querySelector(".banner").style.paddingTop = "64px"
+    //         document.querySelector(".icons").style.marginTop = "24px"
+    //     }
+    // }
 
     jQuery(".gallery-container")
     .justifiedGallery({
