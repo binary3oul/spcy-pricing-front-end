@@ -11,12 +11,21 @@ main {
 }
 
 @media(min-width:768px) {
+    @media(max-height: 768px) {
+        .banner {
+            padding-top: 60px;
+        }
+
+        .icons {
+            margin-top: 60px !important;
+        }
+
+        .icons .col-4 {
+            margin-bottom: 1.5rem !important;
+        }
+    }
     html {
         font-size: 16px
-    }
-
-    .icons {
-        margin-top: 100px !important
     }
 
     img.text-cyan {
@@ -61,6 +70,10 @@ main {
     img.text-cyan {
         height: 28px !important;
         margin-bottom: 10px !important;
+    }
+
+    .icons {
+        margin-top: 60px !important;
     }
 }
 

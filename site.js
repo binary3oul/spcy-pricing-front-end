@@ -1,4 +1,5 @@
 function openTabPage(n, t) {
+    $('#bottom-portfolio').hide()
     $('#gallery-loading').show()
     for (var r, u = document.getElementsByClassName("tabcontent"), i = 0; i < u.length; i++)
         u[i].style.display = "none";
@@ -8,8 +9,13 @@ function openTabPage(n, t) {
     
     $('#gallery-loading').fadeOut(800, function() {
         $(`#${t}`).fadeIn(100, function(){
+            $('#bottom-portfolio').show()
             if(n.currentTarget)
             n.currentTarget.className += " active"
+
+            $('html, body').animate({
+                scrollTop: $('#portfolio').offset().top
+            }, 'slow');
         })
         
     })
@@ -20,7 +26,6 @@ const selectRadios = document.getElementsByName("select")
 selectRadios.forEach(radio => {
     radio.addEventListener("change", (e) => {
         $(`input[name="bottom-select"][value=${e.target.value}]`).click()
-        // openTabPage(e, e.target.value)
     })
 })
 
@@ -37,19 +42,19 @@ bottomSelectRadios.forEach(radio => {
 
 window.addEventListener('DOMContentLoaded', function() {
     const observer = lozad();
-    console.log('observer', observer)
+    // console.log('observer', observer)
     observer.observe();
 
     document.getElementById("defaultTabPage").dispatchEvent(new Event('change'))
     // Code you want to execute after the DOM has been mounted
-    if(window.innerWidth < 768){
-        const iconsCount = document.querySelectorAll(".icons .text-cyan").length
-        if(iconsCount > 4) {
-            document.querySelector("h2.name").style.setProperty('padding-bottom', '8px', 'important')
-            document.querySelector(".banner").style.paddingTop = "64px"
-            document.querySelector(".icons").style.marginTop = "24px"
-        }
-    }
+    // if(window.innerWidth < 768){
+    //     const iconsCount = document.querySelectorAll(".icons .text-cyan").length
+    //     if(iconsCount > 4) {
+    //         document.querySelector("h2.name").style.setProperty('padding-bottom', '8px', 'important')
+    //         document.querySelector(".banner").style.paddingTop = "64px"
+    //         document.querySelector(".icons").style.marginTop = "24px"
+    //     }
+    // }
 
     jQuery(".gallery-container")
     .justifiedGallery({
@@ -58,7 +63,7 @@ window.addEventListener('DOMContentLoaded', function() {
         margins: 6
     })
     .on("jg.complete", function () {
-        console.log('gallery-start', Date.now())
+        // console.log('gallery-start', Date.now())
         window.lightGallery(
             this,
             {
@@ -75,7 +80,7 @@ window.addEventListener('DOMContentLoaded', function() {
                     rotate: true
                 }
             });
-        console.log('gallery-end', Date.now())
+        // console.log('gallery-end', Date.now())
 
     });
 
