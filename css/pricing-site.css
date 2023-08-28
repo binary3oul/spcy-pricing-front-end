@@ -1,0 +1,266 @@
+body{
+    background-color: #eee;
+}
+
+.card {
+    margin-top: 40px;
+    color: #fefefe !important;
+}
+
+.card-1 *{
+    color: #eaeaea !important;
+
+}
+
+.card-2 {
+    padding-bottom: 20px;
+}
+
+.price {
+    color: #888;
+}
+
+.price h2{
+    text-align: center;
+}
+
+.price span {
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+}
+
+.card-1{
+    background: linear-gradient(to right, #8E2DE2 0%, #4A00E0 100%);
+    position: relative;
+}
+
+.bullet {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 5px;
+    /* visibility: hidden; */
+}
+
+.list-group-item {
+    background-color: transparent;
+}
+
+.show-more {
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+}
+
+.show-more img{
+    width: 100%;
+    height: 100%;
+}
+
+.sales-description {
+    overflow: hidden;
+    word-break: break-word;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.negotiate-budget {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.card-title label p{
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+@media(min-width: 992px){
+    .card-title label {
+        max-width: 60%;
+    }
+}
+
+@media(max-width: 400px){
+    .card-title label {
+        font-size: 20px;
+    }
+    .card-title h2 {
+        font-size: 18px;
+    }
+
+    .card-title h2.location-change span{
+        font-size: 14px;
+    }
+
+    .card-title h6{
+        font-size: 14px;
+    }
+    .show-more {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media(max-width: 768px){
+    .card-title h6 {
+        max-width: 70%;
+    }
+}
+
+.form-check-input {
+    display: none;
+}
+
+#generate-quote-form {
+    display: none;
+    padding-top: 60px;
+    border-top: 1px solid #aaa;
+}
+
+
+.card-ribbon::before {
+    border-right-color: #005580;
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 0;
+    width: 7px;
+    right: 100%;
+    border-right: 10px solid #646464;
+    border-top: 16px solid transparent;
+}
+
+.card-ribbon {
+    min-width: 96px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    margin: -16px 0 0;
+    padding: 10px 20px 6px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 23px;
+    z-index: 101;
+    background-color: #0088cc;
+    font-family: var(--porto-alt-ff,var(--porto-body-ff)),sans-serif;
+}
+
+.card-body {
+    padding-top: 20px;
+    padding-bottom: 0
+}
+
+#result .alert {
+    width:75%;
+}
+
+@media(max-width: 1192px) {
+    #result .alert {
+        width:100%;
+    }
+}
+
+.intro-subtext {
+    line-height: 1.5;
+}
+
+/* Generate Quote Form */
+
+.btn-add{
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.card-2 {
+    background-color: #424242;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.events-title {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 16px;
+}
+
+.text-grey {
+    color: #9E9E9E
+}
+
+.flex-1 {
+    width: 30%;
+}
+
+.datetime {
+    padding: 2px 6px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: transparent;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: left
+}
+
+.datetime:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #00C853;
+    outline-width: 0;
+    background: transparent;
+    color: white;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: #fff
+}
+
+::-ms-input-placeholder {
+    color: #fff
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+.exit {
+    border: 1px solid #9E9E9E;
+    color: #9E9E9E;
+    background-color: transparent
+}
+
+.exit:hover {
+    border: 1px solid #9E9E9E;
+    color: #000 !important;
+    background-color: #9E9E9E
+}
+
+@media(max-width: 768px) {
+
+    .btn-add {
+        font-size: 16px;
+    }
+
+}
+@media(max-width: 992px) {
+    .timepicker-wrapper {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+}
