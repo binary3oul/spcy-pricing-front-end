@@ -76,7 +76,7 @@ $('.show-more').click(function() {
     let salesDescription = $(this).closest('.list-group-item').find('.sales-description')
     if(active){
         $(this).find('img').attr('src', './images/info-active.png')
-        salesDescription.css({"maxHeight": "400px"})
+        salesDescription.css({"maxHeight": "800px"})
     }
     else{
         $(this).find('img').attr('src', './images/info.png')
