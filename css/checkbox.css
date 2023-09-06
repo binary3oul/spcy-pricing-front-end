@@ -4,7 +4,7 @@ input[type=checkbox] {
     cursor: pointer;
     height: 40px;
     width: 40px;
-    box-shadow: 10px 10px 15px rgba(0, 0, 70, 0.12);
+    box-shadow: 10px 10px 15px rgba(0,0,70,0.12);
     border: 8px solid #ececec;
     outline: none;
     display: none;
@@ -12,7 +12,7 @@ input[type=checkbox] {
     align-items: center;
     transition: .5s;
 }
-
+   
 input[type=checkbox]::after {
     transition: .5s;
     font-family: monospace;
@@ -26,13 +26,13 @@ input[type=checkbox]::after {
     border-width: 0 0.15em 0.15em 0;
     transform: rotate(45deg);
 }
-
+   
 input[type=checkbox]:checked {
-    box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.5),
-        inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+    box-shadow: inset -10px -10px 15px rgba(255,255,255,0.5),
+    inset 10px 10px 15px rgba(70,70,70,0.12);
     transition: .5s;
 }
-
+   
 input[type=checkbox]:checked::after {
     transition: .5s;
     border: solid #15e38a;

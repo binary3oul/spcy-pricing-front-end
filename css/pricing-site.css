@@ -9,7 +9,10 @@ body{
 
 .card-1 *{
     color: #eaeaea !important;
+}
 
+.card-1 h2 {
+    font-size: 18px;
 }
 
 .card-2 {
